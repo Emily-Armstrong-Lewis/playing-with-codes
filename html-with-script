@@ -14,13 +14,21 @@
 	</head>
 	<body>
 		<header>
+		   <h1>Simple JavaScript in Action</h1>
 		</header>
-		<!--Script will start here momentarily
-    <script type="text/javascript">
-			
-		</script>
-    just going to transfer work places.-->
+		
 		<main>
+		<div id="empty">
+		</div>
+
+    <script type="text/javascript">
+		var create= document.createElement("p");
+		var node= document.createTextNode("This is written in javaScript");
+		create.appendChild(node);
+		var show=document.getElementById("empty");
+		show.appendChild(create);
+	</script>
+    
 		</main>
 		<footer>
 		</footer>
